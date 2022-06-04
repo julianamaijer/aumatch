@@ -1,6 +1,6 @@
 package com.julianamaijer.aumatch.enums
 
-enum class AnimalStatusEnum {
+enum class StatusEnum {
     ACTIVE,
     DISABLED
 }

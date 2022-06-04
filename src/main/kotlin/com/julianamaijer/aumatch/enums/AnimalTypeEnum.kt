@@ -1,6 +1,6 @@
 package com.julianamaijer.aumatch.enums
 
-enum class TypeAnimalEnum {
+enum class AnimalTypeEnum {
 
     DOG, CAT;
 

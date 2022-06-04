@@ -1,6 +1,6 @@
 package com.julianamaijer.aumatch.enums
 
-enum class SizeEnum {
+enum class AnimalStatureEnum {
     SMALL,
     MEDIUM,
     LARGE

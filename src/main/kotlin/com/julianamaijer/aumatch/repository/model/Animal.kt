@@ -1,10 +1,7 @@
-package com.julianamaijer.aumatch.domain.model
+package com.julianamaijer.aumatch.repository.model
 
-import com.julianamaijer.aumatch.enums.AnimalStatusEnum
-import com.julianamaijer.aumatch.enums.GenderEnum
-import com.julianamaijer.aumatch.enums.SizeEnum
-import com.julianamaijer.aumatch.enums.TypeAnimalEnum
 import javax.persistence.*
+
 
 @Entity(name = "animal")
 data class Animal (
@@ -23,16 +20,16 @@ data class Animal (
         var age: Int,
 
         @Column
-        var size: SizeEnum,
+        var stature: String,
 
         @Column
-        var type: TypeAnimalEnum,
+        var type: String,
 
         @Column
-        var gender: GenderEnum,
+        var gender: String,
 
         @Column
-        var status: AnimalStatusEnum,
+        var status: String,
 
         @ManyToOne
         @JoinColumn(name = "ong_id")

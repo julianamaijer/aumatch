@@ -7,5 +7,6 @@ import org.springframework.boot.runApplication
 class AumatchApplication
 
 fun main(args: Array<String>) {
+	System.out.println("te amoooo");
 	runApplication<AumatchApplication>(*args)
 }

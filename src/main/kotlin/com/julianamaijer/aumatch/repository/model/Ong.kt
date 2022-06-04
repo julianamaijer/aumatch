@@ -1,11 +1,8 @@
-package com.julianamaijer.aumatch.domain.model
+package com.julianamaijer.aumatch.repository.model
 
 import com.julianamaijer.aumatch.enums.OngStatusEnum
-import javax.persistence.Column
-import javax.persistence.Entity
-import javax.persistence.GeneratedValue
-import javax.persistence.GenerationType
-import javax.persistence.Id
+import javax.persistence.*
+
 
 @Entity(name="ong")
 data class Ong (
@@ -14,20 +11,24 @@ data class Ong (
         @GeneratedValue(strategy = GenerationType.IDENTITY)
         var id: Int,
 
-        @Column
+        @Column(name = "company_name")
         var companyName: String,
 
-        @Column
+        @Column(name = "registered_number")
         var registeredNumber: String,
 
 
+/*
         var animals: List<Animal>,
 
         var chats: List<Chat>,
 
+        @OneToOne
+        @JoinColumn(name = "address_id")
         var address: Address,
 
         @Column
-        var status: OngStatusEnum
+        var status: String
+*/
 
         )

@@ -1,6 +1,6 @@
 package com.julianamaijer.aumatch.exception
 
-import com.julianamaijer.aumatch.controller.dto.ErrorResponse
+import com.julianamaijer.aumatch.controller.dto.response.ErrorResponse
 import org.springframework.http.HttpStatus
 import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.ExceptionHandler

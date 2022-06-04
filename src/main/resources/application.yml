@@ -3,7 +3,7 @@ spring:
     hibernate:
       ddt-auto: update
   datasource:
-    url: jdbc:mysql://localhost:3306/freemarket?createDatabaseIfNotExist=true
+    url: jdbc:mysql://localhost:3306/aumatch?createDatabaseIfNotExist=true
     username: root
     password: maijer1245
   jackson:

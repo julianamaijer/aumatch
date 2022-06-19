@@ -36,6 +36,11 @@ public class Animal {
     @Column
     private String sexo;
 
+    @Column
+    private String descricao;
+
+    @Column
+    private String foto;
     //private StatusAnimalEnum statusAnimal;
 
     @ManyToOne

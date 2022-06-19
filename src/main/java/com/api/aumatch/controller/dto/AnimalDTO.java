@@ -17,7 +17,9 @@ public class AnimalDTO {
     private Integer idade;
     private String porte;
     private String tipoAnimal;
+    private String descricao;
     private String sexo;
+    private String foto;
     //private StatusAnimalEnum statusAnimal;
     private OngDTO ongOrigem;
 

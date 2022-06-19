@@ -1,3 +1,4 @@
+/*
 package com.api.aumatch.service;
 
 import com.api.aumatch.domain.model.*;
@@ -74,4 +75,4 @@ class AdotanteServiceTest {
     }
 
 
-}
+}*/

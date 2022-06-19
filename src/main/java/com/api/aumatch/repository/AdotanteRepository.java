@@ -9,7 +9,6 @@ import java.util.Optional;
 
 @Repository
 public interface AdotanteRepository extends JpaRepository<Adotante, Long> {
-    Optional<Adotante> findById(Long idAdotante);
     void delete(Adotante adotante);
     List<Adotante> findAll();
 }

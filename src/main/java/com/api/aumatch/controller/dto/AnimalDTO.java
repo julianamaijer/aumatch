@@ -15,9 +15,9 @@ public class AnimalDTO {
     private String nome;
     private String raca;
     private Integer idade;
-    private PorteEnum porte;
-    private TipoAnimalEnum tipoAnimal;
-    private SexoEnum sexo;
+    private String porte;
+    private String tipoAnimal;
+    private String sexo;
     //private StatusAnimalEnum statusAnimal;
     private OngDTO ongOrigem;
 

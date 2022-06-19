@@ -2,7 +2,6 @@ package com.api.aumatch.controller.dto;
 
 
 import com.api.aumatch.domain.model.Animal;
-import com.api.aumatch.domain.model.Chat;
 import com.api.aumatch.domain.model.Endereco;
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
@@ -18,9 +17,8 @@ public class OngDTO {
 
     private String razaoSocial;
     private String cnpj;
-    private List<AnimalDTO> animais;
-    private List<ChatDTO> historicoChat;
     private EnderecoDTO endereco;
+    //private List<ChatDTO> historicoChat;
     //private StatusOngEnum statusOngEnum;
 
 }

@@ -8,7 +8,7 @@ import lombok.Value;
 
 import java.time.LocalDate;
 import java.util.List;
-
+/*
 @Value
 @Builder
 @AllArgsConstructor(access = AccessLevel.PRIVATE)
@@ -19,4 +19,4 @@ public class ChatDTO {
     private OngDTO ong;
     private List<String> mensagens;
     private AnimalDTO animal;
-}
+}*/

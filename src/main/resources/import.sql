@@ -1,10 +1,9 @@
-CREATE TABLE adotante(
-    id_adotante int auto_increment primary key,
-    nome varchar(255) not null,
-    sobrenome varchar(255) not null,
-    email varchar(255) not null,
-    telefone varchar(255) not null,
-    idade varchar(255) not null,
-    descricao_perfil varchar(255) not null,
-    senha varchar(255) not null,
-);
+INSERT INTO endereco (id_endereco, rua, numero, complemento, cep, cidade, estado) VALUES (1, 'Rua das Flores', '33', '-', '03543-950', 'São Paulo', 'SP');
+INSERT INTO endereco (id_endereco, rua, numero, complemento, cep, cidade, estado) VALUES (2, 'Rua dos Campos', '144', '-', '03353-980', 'São Paulo', 'SP');
+
+INSERT INTO ong (id_ong, razao_social, cnpj, id_endereco) VALUES (1, 'ONG Animal Feliz', '11234212342342', 1);
+INSERT INTO ong (id_ong, razao_social, cnpj, id_endereco) VALUES (2, 'ONG Cantinho dos Animais', '32433455323435', 2);
+
+
+INSERT INTO animal (id_animal, nome, raca, idade, porte, tipo_animal, sexo, id_ong) VALUES (1, 'Lulu', 'sem raça definida', 18, 'pequeno', 'cão', 'fêmea', 1);
+INSERT INTO animal (id_animal, nome, raca, idade, porte, tipo_animal, sexo, id_ong) VALUES (2, 'Dengoso', 'sem raça definida', 30, 'médio', 'gato', 'macho', 2);

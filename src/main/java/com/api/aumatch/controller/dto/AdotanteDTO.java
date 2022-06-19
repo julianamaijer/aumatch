@@ -1,20 +1,15 @@
 package com.api.aumatch.controller.dto;
 
-import com.api.aumatch.domain.model.Animal;
-import com.api.aumatch.domain.model.Chat;
-import com.api.aumatch.domain.model.Endereco;
 import com.api.aumatch.domain.model.StatusUsuarioEnum;
-import lombok.AccessLevel;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Value;
+import lombok.*;
 
 import java.util.List;
 
 
-@Value
+@Getter
 @Builder
-@AllArgsConstructor(access = AccessLevel.PRIVATE)
+@NoArgsConstructor
+@AllArgsConstructor
 public class AdotanteDTO {
 
     private String nome;
@@ -24,9 +19,9 @@ public class AdotanteDTO {
     private Integer idade;
     private String descricaoDoPerfil;
     private String senha;
-    private EnderecoDTO endereco;
-    private StatusUsuarioEnum statusUsuarioEnum;
-    private List<ChatDTO> historicoChat;
-    private List<AnimalDTO> animaisFavoritos;
+    //private EnderecoDTO endereco;
+   // private StatusUsuarioEnum statusUsuarioEnum;
+  //  private List<ChatDTO> historicoChat;
+  //  private List<AnimalDTO> animaisFavoritos;
 
 }

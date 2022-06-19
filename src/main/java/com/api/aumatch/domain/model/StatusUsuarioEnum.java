@@ -1,8 +1,8 @@
 package com.api.aumatch.domain.model;
 
-public enum StatusUsuarioEnum {
+/*public enum StatusUsuarioEnum {
 
     ATIVO,
     INATIVO
 
-}
+}*/

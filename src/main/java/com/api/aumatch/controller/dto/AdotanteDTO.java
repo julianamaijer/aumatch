@@ -1,6 +1,5 @@
 package com.api.aumatch.controller.dto;
 
-import com.api.aumatch.domain.model.StatusUsuarioEnum;
 import lombok.*;
 
 import java.util.List;
@@ -19,9 +18,11 @@ public class AdotanteDTO {
     private Integer idade;
     private String descricaoDoPerfil;
     private String senha;
-    //private EnderecoDTO endereco;
-   // private StatusUsuarioEnum statusUsuarioEnum;
-  //  private List<ChatDTO> historicoChat;
-  //  private List<AnimalDTO> animaisFavoritos;
+
+    /*
+    private EnderecoDTO endereco;
+    private StatusUsuarioEnum statusUsuarioEnum;
+    private List<ChatDTO> historicoChat;
+    private List<AnimalDTO> animaisFavoritos;*/
 
 }

@@ -18,7 +18,7 @@ public class AnimalDTO {
     private PorteEnum porte;
     private TipoAnimalEnum tipoAnimal;
     private SexoEnum sexo;
-    private StatusAnimalEnum statusAnimal;
+    //private StatusAnimalEnum statusAnimal;
     private OngDTO ongOrigem;
 
 }

@@ -24,12 +24,12 @@ public class AdotanteController {
     private AdotanteMapper adotanteMapper;
 
     @GetMapping("/{idAdotante}")
-    public ResponseEntity<Adotante> selecionarAdodante(@PathVariable Long idAdotante){
-        return ResponseEntity.ok(adotanteService.procurarPorId(idAdotante));
+    public ResponseEntity<AdotanteDTO> selecionarAdodante(@PathVariable Long idAdotante){
+        return ResponseEntity.ok(adotanteMapper.toAdotanteDTO(adotanteService.procurarPorId(idAdotante)));
     }
 
     @GetMapping
-    public ResponseEntity<List<Adotante>> listarAnimais() {
+    public ResponseEntity<List<Adotante>> listarAdotante() {
         return ResponseEntity.ok(adotanteService.listarTodos());
     }
 

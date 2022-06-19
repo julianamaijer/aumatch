@@ -7,12 +7,12 @@ import com.api.aumatch.controller.dto.EnderecoDTO;
 import com.api.aumatch.domain.model.Adotante;
 import com.api.aumatch.domain.model.Animal;
 import com.api.aumatch.domain.model.Chat;
-import com.api.aumatch.domain.model.Endereco;
 import org.mapstruct.Mapper;
 
 @Mapper(componentModel = "spring")
 public interface AdotanteMapper {
 
     Adotante toAdotante(AdotanteDTO adotanteDTO);
+    AdotanteDTO toAdotanteDTO(Adotante adotante);
 
 }

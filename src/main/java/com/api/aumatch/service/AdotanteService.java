@@ -15,7 +15,7 @@ public class AdotanteService {
     private AdotanteRepository adotanteRepository;
 
     public Adotante salvar(Adotante adotante) {
-        return adotanteRepository.save(adotante).get();
+        return adotanteRepository.save(adotante);
     }
 
     public Adotante procurarPorId(Long idAdotante){
@@ -26,7 +26,7 @@ public class AdotanteService {
     public Adotante atualizar(Long idAdotante, Adotante adotante) {
         procurarPorId(idAdotante);
         adotante.setIdAdotante(idAdotante);
-        return adotanteRepository.save(adotante).get();
+        return adotanteRepository.save(adotante);
     }
 
     public void delete(Long idAdotante) {

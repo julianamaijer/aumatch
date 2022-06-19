@@ -16,7 +16,7 @@ public class Animal {
     private PorteEnum porte;
     private TipoAnimalEnum tipoAnimal;
     private SexoEnum sexo;
-    private StatusAnimalEnum statusAnimal;
+    //private StatusAnimalEnum statusAnimal;
     private Ong ongOrigem;
 
 }

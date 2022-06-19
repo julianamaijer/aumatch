@@ -16,6 +16,6 @@ public class Ong {
     private List<Animal> animais;
     private List<Chat> historicoChat;
     private Endereco endereco;
-    private StatusOngEnum statusOngEnum;
+    //private StatusOngEnum statusOngEnum;
 
 }

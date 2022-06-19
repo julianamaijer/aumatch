@@ -11,8 +11,8 @@ import java.util.Optional;
 @Component
 public class AnimalRepositoryImpl implements AnimalRepository{
 
-    Animal animal1 = new Animal(1L, "Lily", "SRD", 2, PorteEnum.PEQUENO, TipoAnimalEnum.GATO, SexoEnum.FEMEA, StatusAnimalEnum.ATIVO, null);
-    Animal animal2 = new Animal(2L, "Aly", "SRD", 4, PorteEnum.PEQUENO, TipoAnimalEnum.CAO, SexoEnum.MACHO, StatusAnimalEnum.ATIVO, null);
+    Animal animal1 = new Animal(1L, "Lily", "SRD", 2, PorteEnum.PEQUENO, TipoAnimalEnum.GATO, SexoEnum.FEMEA, null);
+    Animal animal2 = new Animal(2L, "Aly", "SRD", 4, PorteEnum.PEQUENO, TipoAnimalEnum.CAO, SexoEnum.MACHO, null);
 
     List<Animal> listaAnimal = Arrays.asList(animal1, animal2);
 

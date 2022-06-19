@@ -4,14 +4,12 @@ import com.api.aumatch.controller.dto.AdotanteDTO;
 import com.api.aumatch.domain.model.Adotante;
 import com.api.aumatch.mapper.AdotanteMapper;
 import com.api.aumatch.service.AdotanteService;
-import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-import java.util.Optional;
 
 @RestController
 @RequestMapping("aumatch/v1/adotantes")
@@ -24,8 +22,14 @@ public class AdotanteController {
     private AdotanteMapper adotanteMapper;
 
     @GetMapping("/{idAdotante}")
-    public ResponseEntity<AdotanteDTO> selecionarAdodante(@PathVariable Long idAdotante){
+    public ResponseEntity<AdotanteDTO> selecionarAdotante(@PathVariable Long idAdotante){
         return ResponseEntity.ok(adotanteMapper.toAdotanteDTO(adotanteService.procurarPorId(idAdotante)));
+    }
+
+    @GetMapping("/login")
+    @ResponseStatus(HttpStatus.ACCEPTED)
+    public void validaAdotante(@RequestBody AdotanteDTO adotanteDTO){
+        adotanteService.procurarPorEmailSenha(adotanteDTO.getEmail(), adotanteDTO.getSenha());
     }
 
     @GetMapping

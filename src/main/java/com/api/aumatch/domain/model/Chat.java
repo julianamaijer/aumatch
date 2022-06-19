@@ -7,7 +7,7 @@ import lombok.NoArgsConstructor;
 import java.time.LocalDate;
 import java.util.List;
 
-/*@Data
+@Data
 @AllArgsConstructor
 @NoArgsConstructor
 public class Chat {
@@ -18,4 +18,4 @@ public class Chat {
     private List<String> mensagens;
     private Animal animal;
 
-}*/
+}

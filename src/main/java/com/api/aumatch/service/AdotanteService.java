@@ -2,6 +2,7 @@ package com.api.aumatch.service;
 
 import com.api.aumatch.domain.model.Adotante;
 import com.api.aumatch.exception.EntityNotFoundException;
+import com.api.aumatch.exception.UnauthorizedException;
 import com.api.aumatch.repository.AdotanteRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -36,5 +37,11 @@ public class AdotanteService {
 
     public List<Adotante> listarTodos() {
         return adotanteRepository.findAll();
+    }
+
+    public void procurarPorEmailSenha(String email, String senha) {
+        adotanteRepository.findByEmailAndSenha(email, senha).
+                orElseThrow(() -> new UnauthorizedException("Usuario ou senha inválido(s)"));
+
     }
 }

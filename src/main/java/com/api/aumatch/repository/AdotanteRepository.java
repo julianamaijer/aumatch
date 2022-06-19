@@ -11,4 +11,6 @@ import java.util.Optional;
 public interface AdotanteRepository extends JpaRepository<Adotante, Long> {
     void delete(Adotante adotante);
     List<Adotante> findAll();
+
+    Optional<Adotante> findByEmailAndSenha(String email, String senha);
 }

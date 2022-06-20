@@ -34,16 +34,20 @@ public class AnimalService {
     public Specification<Animal> getAnimalQuery(Boolean tipoAnimalCao, Boolean tipoAnimalGato, String porte, String sexo, Integer idadeMinima, Integer idadeMaxima, Integer distanciaMinima, Integer distanciaMaxima) {
         return (root, query, criteriaBuilder) -> {
             List<Predicate> predicates = new ArrayList<>();
-            if (tipoAnimalCao!=null) {
+            if (tipoAnimalCao!=null && tipoAnimalCao) {
                 predicates.add(criteriaBuilder.equal(root.get("tipoAnimal"), "cão"));
             }
-            if (tipoAnimalGato!=null) {
+            if (tipoAnimalGato!=null && tipoAnimalGato) {
                 predicates.add(criteriaBuilder.equal(root.get("tipoAnimal"), "gato"));
+                if(tipoAnimalCao){
+                    criteriaBuilder.or(predicates.toArray(new Predicate[0]));
+                    predicates.clear();
+                }
             }
-            if (porte!=null) {
+            if (porte!=null && !porte.isBlank()) {
                 predicates.add(criteriaBuilder.equal(root.get("porte"), porte));
             }
-            if (sexo!=null) {
+            if (sexo!=null && !sexo.isBlank()) {
                 predicates.add(criteriaBuilder.equal(root.get("sexo"), sexo));
             }
             if (idadeMinima!=null && idadeMaxima!=null) {
@@ -53,7 +57,7 @@ public class AnimalService {
              //   predicates.add(criteriaBuilder.between(root.get("idade"), distanciaMinima,distanciaMaxima));
             }
             if(predicates.isEmpty()) return null;
-            return criteriaBuilder.or(predicates.toArray(new Predicate[0]));
+            return criteriaBuilder.and(predicates.toArray(new Predicate[0]));
         };
     }
 

@@ -5,5 +5,5 @@ INSERT INTO ong (id_ong, razao_social, cnpj, id_endereco) VALUES (1, 'ONG Animal
 INSERT INTO ong (id_ong, razao_social, cnpj, id_endereco) VALUES (2, 'ONG Cantinho dos Animais', '32433455323435', 2);
 
 
-INSERT INTO animal (id_animal, nome, raca, idade, porte, tipo_animal, sexo, descricao, foto, id_ong) VALUES (1, 'Lulu', 'sem raça definida', 18, 'pequeno', 'fêmea','cão','https://randomuser.me/api/portraits/women/9.jpg', 'essa eh a descricao temp', 1);
-INSERT INTO animal (id_animal, nome, raca, idade, porte, tipo_animal, sexo, descricao, foto, id_ong) VALUES (2, 'Dengoso', 'sem raça definida', 30, 'médio', 'gato', 'macho','https://randomuser.me/api/portraits/women/1.jpg', 'essa eh a descricao temp', 2);
+INSERT INTO animal (id_animal, nome, raca, idade, porte, tipo_animal, sexo, descricao, foto, id_ong) VALUES (1, 'Lulu', 'sem raça definida', 2, 'pequeno', 'cao','femea','O Lulu é um cachorro que adora brincar com crianças! Extremamente ativo, exige bastante atenção de seus tutores!', 'https://cdn2.thedogapi.com/images/ygzwOZd_L.jpg', 1);
+INSERT INTO animal (id_animal, nome, raca, idade, porte, tipo_animal, sexo, descricao, foto, id_ong) VALUES (2, 'Dengoso', 'sem raça definida', 5, 'medio', 'gato', 'macho','essa eh a descricao temp', 'https://cdn2.thecatapi.com/images/19t.gif', 2);

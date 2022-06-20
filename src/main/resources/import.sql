@@ -1,5 +1,5 @@
-INSERT INTO endereco (id_endereco, rua, numero, complemento, cep, cidade, estado) VALUES (1, 'Rua das Flores', '33', '-', '03543-950', 'São Paulo', 'SP');
-INSERT INTO endereco (id_endereco, rua, numero, complemento, cep, cidade, estado) VALUES (2, 'Rua dos Campos', '144', '-', '03353-980', 'São Paulo', 'SP');
+INSERT INTO endereco (id_endereco, rua, numero, complemento, cep, cidade, estado, localizacao) VALUES (1, 'Rua das Flores', '33', '-', '03543-950', 'São Paulo', 'SP', 5);
+INSERT INTO endereco (id_endereco, rua, numero, complemento, cep, cidade, estado, localizacao) VALUES (2, 'Rua dos Campos', '144', '-', '03353-980', 'São Paulo', 'SP', 10);
 
 INSERT INTO ong (id_ong, razao_social, cnpj, id_endereco) VALUES (1, 'ONG Animal Feliz', '11234212342342', 1);
 INSERT INTO ong (id_ong, razao_social, cnpj, id_endereco) VALUES (2, 'ONG Cantinho dos Animais', '32433455323435', 2);

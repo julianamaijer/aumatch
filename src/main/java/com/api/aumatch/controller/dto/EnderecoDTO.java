@@ -5,6 +5,8 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Value;
 
+import javax.persistence.Column;
+
 @Value
 @Builder
 @AllArgsConstructor(access = AccessLevel.PRIVATE)
@@ -16,5 +18,6 @@ public class EnderecoDTO {
     private String cep;
     private String cidade;
     private String estado;
+    private Integer localizacao;
 
 }

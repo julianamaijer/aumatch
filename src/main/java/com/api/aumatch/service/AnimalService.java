@@ -54,7 +54,7 @@ public class AnimalService {
                 predicates.add(criteriaBuilder.between(root.get("idade"), idadeMinima,idadeMaxima));
             }
             if (distanciaMinima!=null && distanciaMaxima!=null) {
-             //   predicates.add(criteriaBuilder.between(root.get("idade"), distanciaMinima,distanciaMaxima));
+                predicates.add(criteriaBuilder.between(root.get("ongOrigem").get("endereco").get("localizacao"), distanciaMinima,distanciaMaxima));
             }
             if(predicates.isEmpty()) return null;
             return criteriaBuilder.and(predicates.toArray(new Predicate[0]));

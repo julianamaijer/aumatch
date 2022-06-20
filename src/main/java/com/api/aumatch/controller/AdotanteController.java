@@ -26,7 +26,7 @@ public class AdotanteController {
         return ResponseEntity.ok(adotanteMapper.toAdotanteDTO(adotanteService.procurarPorId(idAdotante)));
     }
 
-    @GetMapping("/login")
+    @PostMapping("/login")
     @ResponseStatus(HttpStatus.ACCEPTED)
     public void validaAdotante(@RequestBody AdotanteDTO adotanteDTO){
         adotanteService.procurarPorEmailSenha(adotanteDTO.getEmail(), adotanteDTO.getSenha());

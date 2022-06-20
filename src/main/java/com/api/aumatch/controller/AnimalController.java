@@ -39,6 +39,7 @@ public class AnimalController {
             @RequestParam(name ="distanciaMaxima", required = false) Integer distanciaMaxima
     ) {
         List<Animal> animais = animalService.listarTodos(tipoAnimalCao, tipoAnimalGato, porte,sexo, idadeMinima, idadeMaxima, distanciaMinima,distanciaMaxima);
+        System.out.println("tamanho resposta lista "+animais.size());
         return ResponseEntity.ok(animalMapper.toListAnimalDTO(animais));
     }
 

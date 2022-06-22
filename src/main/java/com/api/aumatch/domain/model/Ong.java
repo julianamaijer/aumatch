@@ -25,6 +25,9 @@ public class Ong {
     @Column
     private String cnpj;
 
+    @Column
+    private String telefone;
+
     @OneToOne
     @JoinColumn(name = "id_endereco", nullable = false)
     private Endereco endereco;

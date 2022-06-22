@@ -17,6 +17,7 @@ public class OngDTO {
 
     private String razaoSocial;
     private String cnpj;
+    private String telefone;
     private EnderecoDTO endereco;
     //private List<ChatDTO> historicoChat;
     //private StatusOngEnum statusOngEnum;
